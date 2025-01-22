@@ -15,6 +15,11 @@
 # production
 /build
 
+# local development
+.vscode
+.eslintrc.json
+bun.lockb
+
 # misc
 .DS_Store
 *.pem

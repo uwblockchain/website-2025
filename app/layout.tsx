@@ -1,5 +1,5 @@
 import { Analytics } from "@/components/analytics";
-import Header from "@/components/Header";
+import NavBar from "@/components/NavBar";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -23,7 +23,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <div className="max-w-5xl mx-8 lg:mx-auto py-10">
-            <Header />
+            <NavBar />
             <div className="flex justify-center">
               <main className="">{children}</main>
             </div>

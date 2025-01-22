@@ -4,8 +4,8 @@ import { ModeToggle } from "./mode-toggle";
 import Link from "next/link";
 import Image from "next/image";
 
-interface HeaderProps {}
-const Header: FC<HeaderProps> = ({}: HeaderProps) => {
+interface HeaderProps { }
+const NavBar: FC<HeaderProps> = ({ }: HeaderProps) => {
   useEffect(() => {
     if (typeof window !== "undefined") {
       const button = document.querySelector("#menu-button");
@@ -48,19 +48,18 @@ const Header: FC<HeaderProps> = ({}: HeaderProps) => {
             />
           </Link>
         </div>
-        {/* small change to commit */}
         <div className="flex space-x-4">
           <div className="block cursor-pointer md:hidden">
-              <ModeToggle />
-          </div> 
+            <ModeToggle />
+          </div>
           <svg
-              xmlns="http://www.w3.org/2000/svg"
-              id="menu-button"
-              className="h-6 w-6 cursor-pointer md:hidden block"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
+            xmlns="http://www.w3.org/2000/svg"
+            id="menu-button"
+            className="h-6 w-6 cursor-pointer md:hidden block"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
             <path
               strokeLinecap="round"
               strokeLinejoin="round"
@@ -69,8 +68,6 @@ const Header: FC<HeaderProps> = ({}: HeaderProps) => {
             />
           </svg>
         </div>
-        
-       
         <div className="hidden w-full md:flex md:items-center md:w-auto" id="menu">
           <ul
             className="
@@ -81,9 +78,6 @@ const Header: FC<HeaderProps> = ({}: HeaderProps) => {
               md:pt-0"
           >
             <li>
-              {/* <a className="md:p-4 py-2 block hover:text-purple-400" href="#"
-                >Features</a
-              > */}
               <Link
                 className="md:p-4 py-2 block hover:text-purple-400"
                 href="/"
@@ -92,9 +86,6 @@ const Header: FC<HeaderProps> = ({}: HeaderProps) => {
               </Link>
             </li>
             <li>
-              {/* <a className="md:p-4 py-2 block hover:text-purple-400" href="#"
-                >Pricing</a
-              > */}
               <Link
                 className="md:p-4 py-2 block hover:text-purple-400"
                 href="/events"
@@ -127,11 +118,6 @@ const Header: FC<HeaderProps> = ({}: HeaderProps) => {
               </Link>
             </li>
             <li>
-              {/* <a
-                className="md:p-4 py-2 block hover:text-purple-400 text-purple-500"
-                href="#"
-                >Sign Up</a
-              > */}
               <Link
                 className="md:p-4 py-2 block hover:text-purple-400 text-purple-500"
                 href="/contact"
@@ -149,4 +135,4 @@ const Header: FC<HeaderProps> = ({}: HeaderProps) => {
   );
 };
 
-export default Header;
+export default NavBar;
