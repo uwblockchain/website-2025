@@ -88,30 +88,6 @@ const NavBar: FC<HeaderProps> = ({ }: HeaderProps) => {
             <li>
               <Link
                 className="md:p-4 py-2 block hover:text-purple-400"
-                href="/events"
-              >
-                Event
-              </Link>
-            </li>
-            <li>
-              <Link
-                className="md:p-4 py-2 block hover:text-purple-400"
-                href="/portfolios"
-              >
-                Portfolio
-              </Link>
-            </li>
-            <li>
-              <Link
-                className="md:p-4 py-2 block hover:text-purple-400"
-                href="/posts"
-              >
-                Writings
-              </Link>
-            </li>
-            <li>
-              <Link
-                className="md:p-4 py-2 block hover:text-purple-400"
                 href="/about"
               >
                 About
@@ -119,10 +95,42 @@ const NavBar: FC<HeaderProps> = ({ }: HeaderProps) => {
             </li>
             <li>
               <Link
+                className="md:p-4 py-2 block hover:text-purple-400"
+                href="/events"
+              >
+                Events
+              </Link>
+            </li>
+            {/* <li> */}
+            {/*   <Link */}
+            {/*     className="md:p-4 py-2 block hover:text-purple-400" */}
+            {/*     href="/portfolios" */}
+            {/*   > */}
+            {/*     Portfolio */}
+            {/*   </Link> */}
+            {/* </li> */}
+            {/* <li> */}
+            {/*   <Link */}
+            {/*     className="md:p-4 py-2 block hover:text-purple-400" */}
+            {/*     href="/posts" */}
+            {/*   > */}
+            {/*     Writings */}
+            {/*   </Link> */}
+            {/* </li> */}
+            <li>
+              <Link
+                className="md:p-4 py-2 block hover:text-purple-400 text-purple-500"
+                href="/team"
+              >
+                Team
+              </Link>
+            </li>
+            <li>
+              <Link
                 className="md:p-4 py-2 block hover:text-purple-400 text-purple-500"
                 href="/contact"
               >
-                Contact
+                Join Us
               </Link>
             </li>
             <li className="md:p-4 py-2 block invisible md:visible">
