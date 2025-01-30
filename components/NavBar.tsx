@@ -122,7 +122,7 @@ const NavBar: FC<HeaderProps> = ({ }: HeaderProps) => {
                 className="md:p-4 py-2 block hover:text-purple-400 text-purple-500"
                 href="/team"
               >
-                Team
+                Our Team
               </Link>
             </li>
             <li>
